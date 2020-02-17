@@ -6,7 +6,6 @@
 $primaryColor: #F4F4F4;
 
 body {
-  background-color: blue;
   font-family: 'Muli', sans-serif;
 
   animation: colorchange 50s; /* animation-name followed by duration in seconds*/
@@ -76,9 +75,6 @@ p {
   font-size: 14px;
 }
 
-.link:hover {
-  color: red;
-}
 
 .detail {
   font-size: 12px;
