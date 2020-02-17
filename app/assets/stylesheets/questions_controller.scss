@@ -1,0 +1,136 @@
+// Place all the styles related to the QuestionsController controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400&display=swap');
+
+$primaryColor: #F4F4F4;
+
+body {
+  background-color: blue;
+  font-family: 'Muli', sans-serif;
+
+  animation: colorchange 50s; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+      -webkit-animation: colorchange 50s; /* Chrome and Safari */
+}
+
+@keyframes colorchange
+    {
+      0%   {background: #fcf8e8;}
+      25%  {background: #ecdfc8;}
+      50%  {background: #ecb390;}
+      75%  {background: #df7861;}
+      100% {background: #c06c84;}
+    }
+
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+      0%   {background: #fcf8e8;}
+      25%  {background: #ecdfc8;}
+      50%  {background: #ecb390;}
+      75%  {background: #df7861;}
+      100% {background: #c06c84;}
+    }
+
+
+
+
+p {
+  margin: 5px;
+}
+
+
+
+.center {
+   text-align: center;
+}
+.mb {
+  margin-bottom: 15px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 400px;
+
+}
+
+.container-answer {
+  margin: 0 auto;
+  width: 400px;
+  padding: 30px;
+}
+
+.answer, .question {
+  background-color: white;
+  display: block;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-top: 15px;
+  box-shadow: 2px 2px 5px rgba(20,20,20, 0.1);
+}
+
+.link {
+  margin-top: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+.link:hover {
+  color: red;
+}
+
+.detail {
+  font-size: 12px;
+  color: grey;
+}
+
+.custom-input {
+  border-radius: 5px;
+  border: 0;
+  width: 200px;
+  height: 15px;
+  padding: 5px 10px;
+  box-shadow: 2px 2px 5px rgba(20,20,20, 0.1);
+}
+
+input::placeholder {
+  color: rgba(20,20,20, 0.2);
+  font-size: 10px;
+}
+
+input::value {
+
+}
+
+.custom-btn {
+  border-radius: 5px;
+  border: 0;
+  height: 25px;
+  width: 80px;
+  box-shadow: 2px 2px 5px rgba(20,20,20, 0.1);
+  transition: all 0.5s ease-out;
+}
+
+.custom-btn:hover {
+  background-color: rgb(80,80,80);
+  color: white;
+}
+
+a:link {
+  color: rgb(40,40,40);
+  text-decoration: none;
+}
+a:visited {
+  color:rgb(40,40,40);
+}
+a:hover {
+  color: rgb(80,80,80);;
+}
+a:active {
+  color: #333333;
+}
+
+
+
+
